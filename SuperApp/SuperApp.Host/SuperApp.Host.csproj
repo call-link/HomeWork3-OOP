@@ -3,6 +3,7 @@
   <ItemGroup>
     <ProjectReference Include="..\SuperApp.Core\SuperApp.Core.csproj" />
     <ProjectReference Include="..\SuperApp.Module.Library\SuperApp.Module.Library.csproj" />
+    <ProjectReference Include="..\SuperApp.Module.Hospital\SuperApp.Module.Hospital.csproj" />
   </ItemGroup>
 
   <PropertyGroup>

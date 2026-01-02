@@ -1,5 +1,7 @@
 ﻿using SuperApp.Core.Modules;
 using SuperApp.Module.Library;
+using SuperApp.Module.Hospital;
+
 
 class Program
 {
@@ -7,7 +9,9 @@ class Program
     {
         List<IModule> modules = new()
         {
-            new LibraryModule()
+            new LibraryModule(),
+            new HospitalModule()
+            
         };
 
         while (true)
@@ -19,7 +23,7 @@ class Program
             {
                 Console.WriteLine($"{i + 1}. {modules[i].Name}");
             }
-
+            Console.WriteLine("Please Select a option ...");
             var input = Console.ReadLine();
             var index = int.Parse(input) - 1;
 
